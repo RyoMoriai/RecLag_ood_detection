@@ -46,23 +46,23 @@ We use ResNet18, ResNet34, and WRN40-2 as our backbone networks. And the pre-tra
 All the model weights have been saved at ```./checkpoints/cifar10/``` and ```./checkpoints/cifar100/```, you can use them directly if you do not want to train them again.
 Otherwise, you can train the model by the following command:
 ```
-python train_model.py --model xxx(resnet18/resnet34/wrn)
+python train_model.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --dataset_path xxx(directory path of the data set)
 ```
 ##### (2) Prepare the stored pattern we need
-You can directly run the bash and the stored pattern used for **HE** and **SHE** will be generated automatically.
+Stored pattern must be prepared in advance to run the our or comparative method. There are two types, “SHE” and “HE”, especially “HE” needs to be saved for the execution of our method
 ```
-bash generate_SHEandHE_feature.sh
+python generate_stored_pattern.py  --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --score (SHE/HE) --stored_data_path xxx(directory path of the data set)
 ```
 After several time, the stored pattern is stored at ```./stored_pattern/all_stored_pattern``` and ```./stored_pattern/avg_stored/pattern/```.
 
-##### (3) Calculate the Hopfield energy score
+##### (3) Run our method
 You can evaluate our method by run the following command:
 ```
-python test_score_ood_detection.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --score SHE
+python learn_RecLag.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --stored_data_path xxx(directory path of the OOD data set)
+python test_RecLag.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --stored_data_path xxx(directory path of the OOD data set)
 ```
-### Evaluation of ImageNet-1k
-We use ResNet-50 as the backbone network to evaluate the OOD detection performance. And the command is as following:
+
+In addition, the comparison method runs as follows
 ```
-python generate_stored_pattern_imagenet.py
-python test_score_ood_detection_imagenet.py
+python test_score_ood_detection.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --score(MSP/Energy/ReAct/HE/SHE)
 ```
