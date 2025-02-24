@@ -1,6 +1,6 @@
-### Rectified Lagrangian for Out-of-Distribution Detection\\in Modern Hopfield Networks
+### Rectified Lagrangian for Out-of-Distribution Detection in Modern Hopfield Networks
 
-The document is guidance for reproducing our paper, some codes are from [energy-ood](https://github.com/wetliu/energy_ood) and [SHE_ood_detection](https://github.com/zjs975584714/SHE_ood_detection).
+The document is guidance for reproducing [our paper](https://www.arxiv.org/abs/2502.14003), some codes are from [energy-ood](https://github.com/wetliu/energy_ood) and [SHE_ood_detection](https://github.com/zjs975584714/SHE_ood_detection).
 
 #### Abstract
 Modern Hopfield networks (MHNs) have recently gained significant attention in the field of artificial intelligence because they can store and retrieve a large set of patterns with an exponentially large memory capacity.
@@ -15,6 +15,7 @@ The interaction matrix is optimized so that the probability densities can be est
 We demonstrate the effectiveness of RecLag-based MHNs compared to energy-based OOD detection methods, including those using state-of-the-art Hopfield energies, across nine image datasets.
 
 #### Poster
+[aaai2025_moriai_poster.pdf](https://github.com/user-attachments/files/18947439/aaai2025_moriai_poster.pdf)
 
 
 #### Preliminaries
