@@ -1,4 +1,4 @@
-### OUT-OF-DISTRIBUTION DETECTION BASED ON IN-DISTRIBUTION DATA PATTERNS MEMORIZATION WITH MODERN HOPFIELD ENERGY
+### Rectified Lagrangian for Out-of-Distribution Detection\\in Modern Hopfield Networks
 
 The document is guidance for reproducing our paper, some codes are from [energy-ood](https://github.com/wetliu/energy_ood) and [SHE_ood_detection](https://github.com/zjs975584714/SHE_ood_detection).
 
