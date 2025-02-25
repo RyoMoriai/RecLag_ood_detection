@@ -23,6 +23,7 @@ Our code is tested under Ubuntu Linux 18.04.1 and Python 3.6 environment. The en
 ```
 pip install -r requirement.txt
 ```
+Experiments in the paper were done with pythorch 2.2.2 and sensorflow 2.15.0
 
 #### Download the Out-of-distribution (OOD) Dataset
 In our paper, we use nine OOD datasets and two In-distribution (ID) datasets.
