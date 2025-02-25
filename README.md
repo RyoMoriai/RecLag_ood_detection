@@ -58,11 +58,11 @@ After several time, the stored pattern is stored at ```./stored_pattern/all_stor
 ##### (3) Run our method
 You can evaluate our method by run the following command:
 ```
-python learn_RecLag.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --stored_data_path xxx(data_path)
+python train_RecLag.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --stored_data_path xxx(data_path)
 python test_RecLag.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --stored_data_path xxx(data_path)
 ```
 
 In addition, the comparison method runs as follows
 ```
-python test_score_ood_detection.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --score(MSP/Energy/ReAct/HE/SHE) --stored_data_path xxx(data_path)
+python test_comparison_method.py --dataset xxx(cifar10/cifar100) --model xxx(resnet18/resnet34/wrn) --score(MSP/Energy/ReAct/HE/SHE) --stored_data_path xxx(data_path)
 ```
