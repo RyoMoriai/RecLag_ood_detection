@@ -1,6 +1,6 @@
 ### Rectified Lagrangian for Out-of-Distribution Detection in Modern Hopfield Networks
 
-***Ryo Moriai[^1], Nakamasa Inoue[^1], Masayuki Tanaka[^1], Rei Kawakami[^1], Satoshi Ikehata[^1][^3], Ikuro Sato[^1][^2]
+**Ryo Moriai[^1], Nakamasa Inoue[^1], Masayuki Tanaka[^1], Rei Kawakami[^1], Satoshi Ikehata[^1][^3], Ikuro Sato[^1][^2]**
 
 [^1]:Institute of Science Tokyo, Japan
 [^2]:Denso IT Laboratory, Inc. Japan
@@ -23,15 +23,14 @@ The interaction matrix is optimized so that the probability densities can be est
 We demonstrate the effectiveness of RecLag-based MHNs compared to energy-based OOD detection methods, including those using state-of-the-art Hopfield energies, across nine image datasets.
 
 #### BibTeX
+```
 @misc{moriai2025rectifiedlagrangianoutofdistributiondetection,
       title={Rectified Lagrangian for Out-of-Distribution Detection in Modern Hopfield Networks}, 
       author={Ryo Moriai and Nakamasa Inoue and Masayuki Tanaka and Rei Kawakami and Satoshi Ikehata and Ikuro Sato},
       year={2025},
-      eprint={2502.14003},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2502.14003}, 
+      booktitel= {Proc. AAAI Conference on Artificial Intelligence},
 }
+```
 
 #### Poster
 [aaai2025_moriai_poster.pdf](https://github.com/user-attachments/files/18947439/aaai2025_moriai_poster.pdf)
